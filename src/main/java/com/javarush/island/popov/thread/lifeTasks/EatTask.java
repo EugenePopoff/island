@@ -56,7 +56,7 @@ public class EatTask implements Runnable {
                 iterator.remove(); // Удаление текущего животного из списка
             }
         } else if (countAnimalsStart == 0) {
-            finalMessage("Всё кончено!", "животных", StatTask.getCurrentDay()); // Вывод сообщения о проигрыше
+            finalMessage("Всё кончено!", "животных", StatTask.getCurrentDay());
         }
         latch.countDown(); // Уменьшение счетчика синхронизатора
     }
